@@ -37,6 +37,9 @@ cp "$DAPP_U_DIR/public/favicon.ico" "$BUILDS_DIR/" || { echo -e "${RED}❌ Faile
 echo -e "${BLUE}📝 Staging changes...${NC}"
 cd "$BUILDS_DIR" || exit 1
 
+# Stage all changes first
+git add -A
+
 # Check if there are changes
 if git diff --cached --quiet; then
   echo -e "${RED}❌ No changes to commit${NC}"
@@ -46,7 +49,6 @@ fi
 # Commit and push
 TIMESTAMP=$(date +%Y-%m-%d\ %H:%M:%S)
 echo -e "${BLUE}💾 Committing with timestamp...${NC}"
-git add -A
 git commit -m "Build update: $TIMESTAMP"
 
 echo -e "${BLUE}⬆️  Pushing to GitHub...${NC}"
