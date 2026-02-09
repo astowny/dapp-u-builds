@@ -32,6 +32,7 @@ fi
 echo -e "${BLUE}📦 Copying files...${NC}"
 cp "$DAPP_U_DIR/dapp-u.mds.zip" "$BUILDS_DIR/" || { echo -e "${RED}❌ Failed to copy dapp-u.mds.zip${NC}"; exit 1; }
 cp "$DAPP_U_DIR/public/favicon.ico" "$BUILDS_DIR/" || { echo -e "${RED}❌ Failed to copy favicon.ico${NC}"; exit 1; }
+cp "$DAPP_U_DIR/dapp-u-store.json" "$BUILDS_DIR/" || { echo -e "${RED}❌ Failed to copy dapp-u-store.json${NC}"; exit 1; }
 
 # Git operations
 echo -e "${BLUE}📝 Staging changes...${NC}"
