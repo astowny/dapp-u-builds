@@ -2,7 +2,7 @@
 	"name":"Dapp U stor",
 	"description":"DAO Universalis dapp u to work with expert defi dapp e",
     "icon":"https://github.com/astowny/dapp-u-builds/raw/main/favicon.ico",
-	"version":"1.0.0",
+	"version":"0.2.0",
  
 	"dapps":[
         {
@@ -10,7 +10,7 @@
         "icon":"https://github.com/astowny/dapp-u-builds/raw/main/favicon.ico",
         "name":"MiniDapp1 name",
         "description": "DAO Universalis dapp u to work with expert defi dapp e",
-        "version" : "1.0.0"
+        "version" : "0.2.0"
         }
     ]
 }
