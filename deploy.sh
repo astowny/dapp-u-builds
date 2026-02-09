@@ -9,8 +9,8 @@ NC='\033[0m' # No Color
 # Get the directory where this script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PARENT_DIR="$(dirname "$SCRIPT_DIR")"
-DAPP_U_DIR="$SCRIPT_DIR"
-BUILDS_DIR="$PARENT_DIR/dapp-u-builds"
+DAPP_U_DIR="$PARENT_DIR/dapp-u"
+BUILDS_DIR="$SCRIPT_DIR"
 
 echo -e "${BLUE}🚀 Deploying dapp-u builds...${NC}"
 echo -e "${BLUE}📍 Script location: $SCRIPT_DIR${NC}"
